@@ -30,7 +30,7 @@ a:visited {
         to bottom,
         rgba(255, 64, 50, 0.8),
         rgba(71, 17, 116, 0.9)
-    ), url('/images/background.jpg') no-repeat center/cover;
+    ), url('../images/background.jpg') no-repeat center/cover;
 }
 
 .header {
