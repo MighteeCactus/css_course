@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: #efeff0;
+}
+
+.container {
+    width: 400px;
+    margin: 100px auto;
+}
+
+.card {
+    background-color: #303843;
+    color: #ededed;
+    border-radius: 5px;
+    text-align: center;
+    padding: 45px 50px 70px;
+    box-shadow: 4px 4px 6px hsla(0, 0%, 0%, 0.4);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.card h1 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #ededed;
+}
+
+.card p {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.card input[type="text"] {
+    width: 100%;
+    padding:15px 10px;
+    border: none;
+    font-size: large;
+}
+
+.card button {
+    width: 100%;
+    border: none;
+    padding: 15px 10px;
+    background: linear-gradient(to right, hsl(12, 97%, 64%), hsl(20, 93%, 65%));
+    font-size: large;
+    color: #ededed;
+    font-weight: 400;
+}
+
+.card button:hover {
+    background: linear-gradient(to right, hsl(14, 97%, 58%), hsl(22, 93%, 61%));
+}
