@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --heading-bg: linear-gradient(to right, #f20214, #0d05e6);
+    --heading-bg-tr: linear-gradient(to right, #f20214B8, #0d05e6B8);
+    --heading-text: #eee;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background: var(--heading-bg);
+    color: var(--heading-text);
+    padding: 10px 0;
+    margin-bottom: 80px;
+}
+
+.header.transparent {
+    background: var(--heading-bg-tr);
+}
+
+.main-menu {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    font-size: 0.8rem;
+}
+
+.main-menu a, .main-menu a:visited {
+    color: var(--heading-text);
+}
+
+.main-menu li {
+    cursor: pointer;
+    border-radius: 5px;
+    border:none;
+    padding: 10px;
+}
+
+.main-menu li:hover {
+    background-color: rgba(0,0,0, 0.3);
+}
+
+.container {
+    margin: 50px auto;
+    padding: 0 50px 50px;
+    max-width: 700px;
+}
+
+.container section:first-child {
+    margin-bottom: 100px;
+}
+
+.container section h2 {
+    background: var(--heading-bg);
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    color: var(--heading-text);
+}
+
+.container section p {
+    margin-bottom: 20px;
+}
+
+.container section img {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.mobile-back {
+    display: none;
+}
+
+#the-top {
+    visibility: hidden;
+}
+
+@media (min-width: 769px) {
+    .header {
+        position: sticky;
+        top: 0;
+        left:0;
+        z-index: 999;
+    }
+
+    .container section h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-back {
+        display: inline;
+        opacity: 0.5;
+        color: var(--heading-text);
+        margin-right: 5px;
+        padding: 0 5px;
+    }
+
+
+    .main-menu {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+        padding: 0 20px;
+    }
+
+    .main-menu li {
+        border-radius: 0;
+        min-width: 80%;
+        max-width: 100%;
+        border-bottom: 1px solid #484848;
+    }
+    .main-menu li a {
+        display: block;
+    }
+
+    .main-menu li:hover {
+        border-radius: 5px;
+        border: 0;
+    }
+
+    .main-menu li:first-child {
+        display: none;
+    }
+
+    .main-menu li:last-child {
+        border-bottom: none;
+    }
+
+    .container {
+        padding: 0 20px 50px;
+    }
+
+    .container section h2 {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+}
