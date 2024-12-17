@@ -1,0 +1,151 @@
+:root {
+    --clr-link: black;
+    --clr-text: black;
+    --clr-primary: #f5f0e2;
+    --clr-bg: #fdfdfe;
+
+    --w-main: 600px;
+    --w-footer: 750px;
+    --w-gallery: 900px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {text-decoration: none; color: var(--clr-link);}
+a:visited {text-decoration: none; var(--clr-link);}
+a:visited:hover {text-decoration: none; var(--clr-link);}
+
+ul {list-style: none;}
+img {max-width: 100%;}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6;
+    background: #fdfdfe;
+}
+
+.logo {
+    width: 80px;
+}
+
+.wrapper {
+    background: var(--clr-bg);
+    position: relative;
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    max-width: var(--w-main);
+    margin: 0 auto 80px;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 0.8rem;
+}
+
+.main-menu li {
+    padding: 10px;
+}
+
+.main-menu .highlight {
+    font-weight: 600;
+}
+.main-menu .highlight, .main-menu li:hover {
+    background-color: var(--clr-primary);
+    border-radius: 5px;
+}
+
+.main {
+    max-width: var(--w-gallery);
+    margin: 0 auto 20px;
+}
+
+.hero-text {
+    max-width: var(--w-main);
+    margin: 0 auto 100px;
+    padding: 0 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery a {
+    --margin: 5px;
+    border-radius: 10px;
+    max-width: calc((70vw / 3) - var(--margin) * 2);
+    margin: 2px var(--margin);
+}
+
+.gallery img {
+    border-radius: 10px;
+}
+
+.footer-sep {
+    width:100%;
+    border-top: 1px solid black;
+}
+
+.footer {
+    max-width: var(--w-footer);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.6rem;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.footer p  {
+    margin-bottom: 2px;
+}
+
+.footer p:first-child  {
+    font-weight: 900;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer .contacts {
+    font-weight: 600;
+}
+
+.footer .socials a {
+    margin-right: 5px;
+    font-size: 1.1rem;
+}
+
+.highlight {
+    background-color: var(--clr-primary);
+    padding: 5px 0;
+}
+
+.modal-panel {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

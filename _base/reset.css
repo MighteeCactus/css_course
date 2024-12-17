@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {text-decoration: none; color: var(--clr-link);}
+a:visited {text-decoration: none; var(--clr-link);}
+a:visited:hover {text-decoration: none; var(--clr-link);}
+
+ul {list-style: none;}
+img {max-width: 100%;}
+
+body {
+    font-family: '', sans-serif;
+    line-height: 1.6;
+}
