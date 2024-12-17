@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {text-decoration: none;}
+a, a:hover, a:visited a:hover:visited {color: #000;}
+ul {list-style: none;}
+
+:root {
+    --clr-bg-p1: steelblue;
+    --clr-bg-p2: tan;
+    --clr-bg-p3: teal;
+    --clr-bg-p4: steelblue;
+
+    --anim-speed: 2s;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-color: #333;
+}
+
+.page {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+    padding: 0 3rem;
+    color: #f4f4f4;
+
+    h1, h2 {
+        font-size: 4rem;
+        line-height: 1.2;
+        margin: 2rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+}
+
+#page-1 h1 {
+    transform: translateY(-50vh);
+    animation: header var(--anim-speed) forwards ease-in;
+}
+
+#page-1 p {
+    transform: translateX(-100vw);
+    animation: text var(--anim-speed) forwards ease-in;
+    animation-delay: 1s;
+}
+
+.page-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+    border: none;
+    color:#333;
+    background-color: #f4f4f4;
+    font-size: 1.1rem;
+    transition: all 0.5s ease-in;
+
+    &:hover {
+        background: #333;
+        color: #fff;
+    }
+}
+
+.btn-back {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+#page-1 {
+    background-color: var(--clr-bg-p1);
+}
+
+#page-2 {
+    background-color: var(--clr-bg-p2);
+}
+
+#page-3 {
+    background-color: var(--clr-bg-p3);
+}
+
+#page-4 {
+    background-color: var(--clr-bg-p4);
+}
+
+@keyframes header {
+    from {
+        transform: translateY(-50vh);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes text {
+    from {
+        transform: translateX(-100vw);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .page {
+        h1, h2 {
+            font-size: 3.5rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+        }
+    }
+}
