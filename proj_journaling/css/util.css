@@ -1,0 +1,72 @@
+
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.bg-color-one {
+    background-color: darksalmon;
+    color: #333;
+}
+
+.bg-color-two {
+    background-color: darkcyan;
+    color: #222;
+}
+
+.vertical {
+    max-height: 15rem;
+}
+
+.vertical.block-short {
+    min-height: 50px;
+}
+
+.vertical.block-mid {
+    min-height: 200px;
+}
+
+.vertical.block-long {
+    min-height: 300px;
+}
+
+.btn {
+    padding: 5px;
+    background-color: var(--clr-text-dim-darker);
+    border-radius: 5px;
+    border: none;
+    color: var(--clr-text-dim-light);
+    margin: 5px;
+    margin-left: 0;
+}
+
+.btn:hover {
+    border: 1px solid var(--clr-text-dim-light);
+}
+
+.btn-back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 1vw;
+    width: 40px;
+    height: 40px;
+    z-index: 999;
+    border-radius: 10px;
+    background: var(--clr-bg-darker);
+    color: var(--clr-text-dim-light);
+}
+
+.hidden-op {
+    opacity: 0 !important;
+}
+
+.visible-op {
+    opacity: 1;
+    transition: opacity 0.2s;
+}
